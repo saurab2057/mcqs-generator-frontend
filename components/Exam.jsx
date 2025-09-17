@@ -34,7 +34,7 @@ const Exam = () => {
         setAvailableSets(response.data);
       } catch (error) {
         console.error('Error fetching sets:', error);
-        setAvailableSets(Array.from({ length: 30 }, (_, i) => i + 1));
+        setAvailableSets([]);
       }
     };
     fetchSets();
